@@ -13,7 +13,7 @@ URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	XFree86-devel ImageMagick libapm-devel libxpm-devel
+BuildRequires:	X11-devel ImageMagick libapm-devel libxpm-devel
 
 %description
 wmMoonClock displays the lunar ephemeris with high accuracy. You can

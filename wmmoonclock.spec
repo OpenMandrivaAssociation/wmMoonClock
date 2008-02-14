@@ -12,6 +12,7 @@ Source1:	wmmoonclock_icon.png
 URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
 License:	GPL
 Group:		Graphical desktop/WindowMaker
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	X11-devel ImageMagick libapm-devel libxpm-devel
 
 %description

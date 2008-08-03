@@ -1,6 +1,6 @@
 %define name	wmMoonClock
 %define version	1.27
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name: 	 	%{name}
 Summary: 	Docklet that shows lunar ephemeris to fairly high accuracy

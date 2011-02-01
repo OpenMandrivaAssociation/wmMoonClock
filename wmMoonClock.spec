@@ -1,6 +1,6 @@
 %define name	wmMoonClock
 %define version	1.27
-%define release %mkrel 6
+%define release %mkrel 7
 
 Name: 	 	%{name}
 Summary: 	Docklet that shows lunar ephemeris to fairly high accuracy
@@ -13,7 +13,10 @@ URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	X11-devel ImageMagick libapm-devel libxpm-devel
+BuildRequires:	libx11-devel
+BuildRequires:	libxpm-devel
+BuildRequires:	libxext-devel
+BuildRequires:	imagemagick
 
 %description
 wmMoonClock displays the lunar ephemeris with high accuracy. You can
@@ -31,7 +34,7 @@ coordinates, eg. from this site http://www.astro.com/atlas
 %{__cp} %{SOURCE1} .
 cd Src
 # copy icon to build dir
-%make
+%make CFLAGS="%optflags %ldflags"
 										
 %install
 rm -rf $RPM_BUILD_ROOT

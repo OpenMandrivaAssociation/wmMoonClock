@@ -91,3 +91,40 @@ rm -rf $RPM_BUILD_ROOT
 %{_miconsdir}/%name.png
 %{_iconsdir}/%name/
 
+
+
+%changelog
+* Tue Feb 01 2011 Funda Wang <fwang@mandriva.org> 1.27-7mdv2011.0
++ Revision: 634773
+- simplify BR
+
+* Wed Sep 09 2009 Thierry Vignaud <tv@mandriva.org> 1.27-6mdv2010.0
++ Revision: 434891
+- rebuild
+
+* Sun Aug 03 2008 Thierry Vignaud <tv@mandriva.org> 1.27-5mdv2009.0
++ Revision: 262059
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 1.27-4mdv2009.0
++ Revision: 256206
+- rebuild
+- fix no-buildroot-tag
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Thu Dec 20 2007 Thierry Vignaud <tv@mandriva.org> 1.27-2mdv2008.1
++ Revision: 135560
+- fix directory creation
+- auto-convert XDG menu entry
+- kill re-definition of %%buildroot on Pixel's request
+- buildrequires X11-devel instead of XFree86-devel
+- import wmMoonClock
+
+
+* Sun Dec 11 2005 Udo Rader <udo.rader@bestsolution.at> 1.27-2mdk
+- adding libxpm-devel as BuildReq
+
+* Thu Dec 01 2005 Udo Rader <udo.rader@bestsolution.at> 1.27-1mdk
+- initial release

@@ -1,6 +1,6 @@
 %define name	wmMoonClock
 %define version	1.27
-%define release %mkrel 7
+%define release  8
 
 Name: 	 	%{name}
 Summary: 	Docklet that shows lunar ephemeris to fairly high accuracy
@@ -12,7 +12,6 @@ Source1:	wmmoonclock_icon.png
 URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
 License:	GPL
 Group:		Graphical desktop/WindowMaker
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xpm)
 BuildRequires:	pkgconfig(xext)

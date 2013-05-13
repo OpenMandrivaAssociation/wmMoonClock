@@ -13,9 +13,9 @@ URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	libx11-devel
-BuildRequires:	libxpm-devel
-BuildRequires:	libxext-devel
+BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(xpm)
+BuildRequires:	pkgconfig(xext)
 BuildRequires:	imagemagick
 
 %description

@@ -9,7 +9,7 @@ Release: 	%{release}
 
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	wmmoonclock_icon.png
-URL:		http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
+URL:		https://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 BuildRequires:	pkgconfig(x11)
